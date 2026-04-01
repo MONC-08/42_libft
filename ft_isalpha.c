@@ -1,5 +1,7 @@
 #include <stdio.h>
 
+// checks for an alphabetic character.
+
 int ft_isalpha(int ch)
 {
     if ((ch >= 'A' && ch <= 'Z') || (ch >= 'a' && ch <= 'z'))
