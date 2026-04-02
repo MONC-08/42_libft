@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "libft.h"
 
 // checks for a digit (0 through 9).
 
@@ -14,6 +15,6 @@ int ft_isdigit(int ch)
 // {
 //     char ch;
 //     scanf("%c", &ch);
-//     printf("%d\n", ch); 
+//     // printf("%d\n", ch); 
 //     printf("%d\n", ft_isdigit(ch)); 
 // }

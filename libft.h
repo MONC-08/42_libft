@@ -1,0 +1,10 @@
+#ifndef LIBFT_H
+# define LIBFT_H
+
+int ft_isdigit(int ch);
+int ft_isalpha(int ch);
+int ft_isprint(int ch);
+int ft_isascii(int ch);
+int ft_isalnum(int ch);
+
+#endif
