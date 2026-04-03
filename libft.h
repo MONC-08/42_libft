@@ -7,4 +7,6 @@ int ft_isprint(int ch);
 int ft_isascii(int ch);
 int ft_isalnum(int ch);
 
+size_t ft_strlen(const char *str);
+
 #endif
