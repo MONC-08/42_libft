@@ -10,5 +10,6 @@ int ft_isalnum(int ch);
 size_t ft_strlen(const char *str);
 void *ft_memset(void *ptr, int value, size_t len);
 void ft_bzero(void *s, size_t n);
+void *ft_memcpy(void *dst, const void *src, size_t n);
 
 #endif

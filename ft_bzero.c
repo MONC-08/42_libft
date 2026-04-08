@@ -20,7 +20,7 @@ void ft_bzero(void *s, size_t n)
 
 //     ft_bzero(s, 4);
 
-//     // Print memory byte by byte to SEE the result
+//     // Print memory byte by byte to see the result
 //     int i = 0;
 //     while (i < 12)
 //     {
