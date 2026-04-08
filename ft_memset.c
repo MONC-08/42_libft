@@ -2,10 +2,10 @@
 #include "libft.h"
 #include<string.h>
 
+// memset - fill memory with a constant byte
 void *ft_memset(void *ptr, int value, size_t len)
 {
-    char *p;
-    p = (char *)ptr;
+    char *p = (char *)ptr;
     while(len--)
     {
         *p = value;
