@@ -22,12 +22,41 @@ void *ft_memcpy(void *dst, const void *src, size_t n)
 }
 
 
-// int main()
+// int main(void)
 // {
-//     char dst[100] = "Libc is";
-//     char src[100] = "the standard library.";
+//     char src[] = "Hello World!";
+//     char dst1[50];
+//     char dst2[50];
 
-//     ft_memcpy(dst, src, sizeof(src));
-//     printf("dst after memcpy(): %s\n", dst);
+//     // Normal copy test
+//     ft_memcpy(dst1, src, sizeof(src));
+//     memcpy(dst2, src, sizeof(src));
+
+//     printf("=== NORMAL COPY ===\n");
+//     printf("ft_memcpy: %s\n", dst1);
+//     printf("memcpy   : %s\n", dst2);
+
+//     // Partial copy test
+//     ft_memcpy(dst1, src, 5);
+//     dst1[5] = '\0';
+
+//     memcpy(dst2, src, 5);
+//     dst2[5] = '\0';
+
+//     printf("\n=== PARTIAL COPY (5 bytes) ===\n");
+//     printf("ft_memcpy: %s\n", dst1);
+//     printf("memcpy   : %s\n", dst2);
+
+//     // Overlapping test (undefined behavior)
+//     char s1[20] = "abcdef";
+//     char s2[20] = "abcdef";
+
+//     ft_memcpy(s1 + 2, s1, 4);
+//     memcpy(s2 + 2, s2, 4);
+
+//     printf("\n=== OVERLAP TEST (UNDEFINED) ===\n");
+//     printf("ft_memcpy: %s\n", s1);
+//     printf("memcpy   : %s\n", s2);
+
 //     return 0;
 // }
