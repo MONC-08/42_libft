@@ -23,13 +23,13 @@ size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
     return src_len;
 }
 
-int main()
-{
-    char src[] = "Hello World!";
-    char dst[10];
+// int main()
+// {
+//     char src[] = "Hello World!";
+//     char dst[10];
 
-    size_t res = ft_strlcpy(dst, src, sizeof(dst));
-    printf("Source: %s\n", src);
-    printf("Destination: %s\n", dst);
-    printf("length of source: %d", res);
-}
+//     size_t res = ft_strlcpy(dst, src, sizeof(dst));
+//     printf("Source: %s\n", src);
+//     printf("Destination: %s\n", dst);
+//     printf("length of source: %d", res);
+// }
