@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include "libft.h"
 
-
 // toupper -- lower case to upper case letter conversion
 int	ft_toupper(int c)
 {
