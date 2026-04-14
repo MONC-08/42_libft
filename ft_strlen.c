@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <string.h>
 #include "libft.h"
+#include <stddef.h>
 
 // calculate the length of a string
 
