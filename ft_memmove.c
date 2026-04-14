@@ -1,3 +1,16 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mchowdhu <mchowdhu@student.42heilbronn.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/15 01:02:18 by mchowdhu          #+#    #+#             */
+/*   Updated: 2026/04/15 01:02:18 by mchowdhu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include <stddef.h>
 #include <stdio.h>
 #include "libft.h"
@@ -45,7 +58,7 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 //     printf("s1: %s\n", s1);
 //     printf("s2: %s\n", s2);
 
-//     // 🔹 Overlapping test
+//     // Overlapping test
 //     ft_memmove(s1 + 2, s1, 4);
 //     memmove(s2 + 2, s2, 4); // real one for comparison
 
@@ -53,7 +66,7 @@ void *ft_memmove(void *dst, const void *src, size_t len)
 //     printf("ft_memmove: %s\n", s1);
 //     printf("memmove   : %s\n", s2);
 
-//     // 🔹 Normal copy test
+//     // Normal copy test
 //     char src[] = "Hello";
 //     char dest1[10];
 //     char dest2[10];

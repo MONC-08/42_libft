@@ -1,7 +1,20 @@
-#include <stddef.h>
-#include <stdio.h>
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_ strnstr.c                                      :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mchowdhu <mchowdhu@student.42heilbronn.    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2026/04/15 00:56:12 by mchowdhu          #+#    #+#             */
+/*   Updated: 2026/04/15 00:56:12 by mchowdhu         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
+
 #include "libft.h"
 #include<string.h>
+#include <stddef.h>
+#include <stdio.h>
 
 // ft_strnstr searches for a substring inside a string, but only within the first len characters
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
