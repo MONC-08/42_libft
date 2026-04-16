@@ -1,10 +1,11 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_strlen.c ft_strdup.c 
+SRCS = ft_strlen.c ft_strlcpy.c ft_strdup.c ft_substr.c
 
 OBJS = $(SRCS:.c=.o)
 NAME = libft.a
+all: $(NAME)
 
 $(NAME): $(OBJS)
 	ar rcs $(NAME) $(OBJS)
