@@ -1,7 +1,8 @@
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror
 
-SRCS = ft_strlen.c ft_strlcpy.c ft_strdup.c ft_substr.c ft_strjoin.c
+SRCS = ft_strlen.c ft_strlcpy.c ft_strdup.c ft_substr.c ft_strjoin.c ft_strtrim.c
+
 
 OBJS = $(SRCS:.c=.o)
 NAME = libft.a
