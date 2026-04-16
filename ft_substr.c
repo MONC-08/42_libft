@@ -13,6 +13,7 @@
 #include "libft.h"
 #include <stdlib.h>
 
+// ft_substr extracts a portion (substring) of a string
 char *ft_substr(const char *s, unsigned int start, size_t len)
 {
 	size_t	s_len;
