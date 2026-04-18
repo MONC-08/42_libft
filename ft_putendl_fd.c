@@ -1,41 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mchowdhu <mchowdhu@student.42heilbronn.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/04/18 23:18:14 by mchowdhu          #+#    #+#             */
-/*   Updated: 2026/04/18 23:18:14 by mchowdhu         ###   ########.fr       */
+/*   Created: 2026/04/18 23:40:29 by mchowdhu          #+#    #+#             */
+/*   Updated: 2026/04/18 23:40:29 by mchowdhu         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-// ft_putstr_fd - Instead of printing one character, it prints a whole string to a file descriptor
-
+// It prints a string + newline (\n) to a given file descriptor
+#include <unistd.h>
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_putendl_fd(char *s, int fd)
 {
-	char	*ptr;
-
 	if (!s)
 		return;
-	ptr = s;
-	while (*ptr)
-	{
-		ft_putchar_fd(*ptr, fd);
-		ptr++;
-	}
+	ft_putstr_fd(s, fd);
+	write(fd, "\n", 1);
 }
 
-// --------------------------------------------------
-
-
+// ----------------------------------------------------------------------
 // int	main()
 // {
-// 	ft_putstr_fd("Hello, world!\n", 1);
-
-// 	ft_putstr_fd("This is an error message\n", 2);
-
+// 	ft_putendl_fd("Hello", 1);
+// 	ft_putendl_fd("World", 1);
+// 	ft_putendl_fd("This is an error message", 2);
 // 	return (0);
 // }
