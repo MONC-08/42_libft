@@ -13,6 +13,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <stdint.h>
 #include "libft.h"
 
 // Allocates memory for an array
@@ -22,6 +23,10 @@ void *ft_calloc(size_t count, size_t size)
 {
 	void *ptr;
 
+	if (count == 0 || size == 0)
+		return (malloc(0));
+	if (count > SIZE_MAX / size)
+		return (0);
 	ptr = (void*)malloc(count * size);
 	if (!ptr)
 		return (NULL);
